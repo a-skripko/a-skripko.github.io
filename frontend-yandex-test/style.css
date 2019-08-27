@@ -1,0 +1,157 @@
+.wrapper {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 480px;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: 1px dashed lightgray;
+}
+
+@media all and (orientation: portrait) {
+    .wrapper {
+        width: 320px;
+        height: 480px;
+        flex-direction: column;
+    }
+}
+
+h2 {
+    padding: 10px;
+    margin: 0 auto;
+    width: 320px;
+    height: 35px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.circle-wrapper {
+    position: relative;
+    width: 170px;
+    height: 170px;
+}
+
+.circle-wrapper-invisible {
+    visibility: hidden;
+}
+
+/* <= 50 %*/
+.circle1 {
+     position: absolute;
+     margin: auto;
+     width: 150px;
+     height: 150px;
+     border-top: 10px solid yellow;
+     border-right: 10px solid yellow;
+     border-bottom: 10px solid lightgray;
+     border-left: 10px solid lightgray;
+     border-radius: 50%;
+     transform: rotate(45deg);
+     transition: transform 0.2s ease-in;
+}
+
+.circle2 {
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-top: 10px solid lightgray;
+    border-right: 10px solid lightgray;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in;
+}
+
+/*>50%*/
+.circle2-50 {
+    border-top: 10px solid yellow;
+    border-right: 10px solid yellow;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-rotation {
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle-rotation-paused {
+    animation-play-state: paused;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#value-input{
+    border: 1px solid gray;
+    width: 28px;
+    height: 16px;
+    border-radius: 40%;
+    text-align: center;
+}
+
+#value-input:active, #value-input:hover,
+#value-input:focus {
+    border: 1px solid gray;
+    outline: none;
+}
+
+.value-input-label {
+    margin-left: 5px;
+}
+
+#animate-button, #hide-button {
+   display: none;
+}
+
+.checkbox-button-label {
+    position: relative;
+    margin-left: 35px;
+}
+
+.checkbox-button-field {
+    position: absolute;
+    background-color: dimgray;
+    left: -35px;
+    width: 30px;
+    height: 18px;
+    border-radius: 35%;
+}
+
+.checkbox-button-field-point {
+    position: absolute;
+    background-color: lightgray;
+    left: -34px;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+#animate-button:checked + .checkbox-button-field,
+#hide-button:checked + .checkbox-button-field {
+    background-color: greenyellow;
+}
+
+#animate-button:checked + .checkbox-button-field + .checkbox-button-field-point,
+#hide-button:checked + .checkbox-button-field + .checkbox-button-field-point {
+    left: -22px;
+}
