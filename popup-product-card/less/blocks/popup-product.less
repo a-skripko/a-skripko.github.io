@@ -1,0 +1,206 @@
+.popup-product-base {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+ // display: none;
+}
+
+.popup-product {
+  position: absolute;
+  top: 0;  bottom: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  height: 660px;
+  background-color: white;
+  margin: auto;
+  padding: 25px;
+}
+
+.popup-product-close-button {
+  position: absolute;
+  top: 15px; right: 15px;
+  opacity: 0.3;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+  }
+}
+
+#popup-product-image-wrapper {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+  cursor: crosshair;
+  background-color: white;
+}
+
+.popup-product-image {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease-in;
+}
+
+.popup-product-image-full {
+  position: absolute;
+  z-index: 9;
+  width: 1900px;
+  transition: opacity 0.4s ease-in;
+}
+
+.search-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0,0,0,0.08);
+  border-radius: 50%;
+}
+
+.search-icon-hidden {
+  visibility: hidden;
+}
+
+.search-icon img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  margin: auto;
+}
+
+.popup-product-description {
+  width: 355px;
+}
+
+.popup-product-description h3 {
+  font-size: 30px;
+  color: #294057;
+  font-weight: 400;
+}
+
+.popup-product-article {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #605E5E;
+}
+
+.popup-product-description label {
+  color: #2F2E2E;
+  font-size: 13px;
+}
+
+.popup-product-price-wrapper {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.popup-product-price {
+  padding-top: 23px;
+  color: #A6A6A6;
+  font-size: 19px;
+  margin-right: 10px;
+}
+
+.popup-product-price-old {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.popup-product-price-wrapper a{
+  color: #A6A6A6;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.popup-product-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#popup-product-input {
+  width: 75px;
+  height: 43px;
+  border: 1px solid #c9c9c9;
+  padding-left: 13px;
+  padding-right: -25px;
+  color: #575757;
+}
+
+.popup-product-add-button {
+  width: 100%;
+  text-align: center;
+  background-color: #b99867;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 64px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+    transition: all 0.2s ease-in;
+  }
+}
+
+.popup-product-input-group {
+  position: relative;
+  width: 75px;
+}
+
+.input-arrows {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 30px;
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  display: none;
+}
+
+.arrow-up {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+  }
+
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+  }
+}
+
+.to-hide {
+  background: white;
+  position: absolute;
+  top: 1px; right: 1px;
+  width: 15px;
+  height: 41px;
+}
+
+#x-pos, #y-pos, #offset-x, #offset-y {
+  color: #007bff;
+
+}

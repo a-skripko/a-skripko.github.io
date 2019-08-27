@@ -1,0 +1,161 @@
+.cart-nav {
+  margin: 185px auto 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+}
+
+.cart-main {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.cart-main a, .cart-nav a {
+  color: #DE9C21;
+
+  &:hover, &:active, &:focus {
+    opacity: 0.6;
+  }
+}
+
+table {
+  width: 860px;;
+}
+
+th {
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+th:first-child {
+  font-size: 24px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #b99867;
+}
+
+.cart-item td {
+  padding: 30px 10px;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.cart-item td:nth-child(1) {
+  width: 52%;
+}
+
+.cart-item td:nth-child(2), .cart-item td:nth-child(3), .cart-item td:nth-child(4) {
+  width: 14%;
+}
+
+.cart-item-name {
+  margin-bottom: 20px;
+}
+
+.cart-item-article {
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.cart-item-price-old {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.cart-item-delete-from-cart {
+  text-decoration: underline;
+}
+
+.cart-item-image {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+  border: 1px solid #E5E5E5;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.cart-input-group {
+  position: relative;
+  width: 75px;
+  height: 43px;
+  border: 1px solid #c9c9c9;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+#cart-input {
+  width: 100px;
+  height: 18px;
+  border: none;
+  color: #575757;
+  //text-align: center;
+}
+.cart-input-arrows {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 30px;
+  background-color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover, &:active, &:focus {
+    opacity: 0.6;
+  }
+}
+
+.cart-input-arrow-up {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+  }
+
+}
+
+.cart-input-arrow-down {
+  width: 10px;
+  height: 10px;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+  }
+}
+
+tr:last-child {
+ // text-align: right;
+  font-size: 18px;
+}
+
+.cart-button-make-order {
+  //margin: 10px;
+ // text-align: right;
+}
+
+.cart-button-make-order a {
+  background-color: #b99867;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 45px;
+
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+  }
+}
+
+.cart-nav:last-child {
+  margin-bottom: 65px;
+}

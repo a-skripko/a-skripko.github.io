@@ -1,0 +1,132 @@
+.popup-cart-base {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+.popup-cart {
+  width: 350px;
+  height: 100%;
+  float: right;
+  background-color: white;
+  overflow : auto;
+}
+
+.popup-cart-header {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 100px;
+  background-color: #294057;
+  color: white;
+  font-size: 24px;
+  padding: 25px;
+}
+
+.popup-cart-header img {
+  margin: 0 25px 0 0;
+  cursor: pointer;
+}
+
+.popup-header p {
+  margin: 0 0 0 50px  ;
+}
+
+.popup-cart-items {
+  height: 100%;
+  overflow: auto;
+}
+
+.popup-cart-items hr {
+  color: #294057;
+  width: 75%;
+}
+
+.popup-cart-item {
+  display: flex;
+  padding: 40px 30px 0;
+  align-items: center;
+}
+
+.popup-cart-item-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.popup-cart-item-image img {
+  object-fit: cover;
+}
+
+.popup-cart-item-description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.popup-cart-item-description-normal {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.popup-cart-item-button-delete {
+  height: 100px;
+  flex-grow: 1;
+  text-align: right;
+  cursor: pointer;
+}
+
+.popup-cart-footer-cost {
+  background-color: white;
+  position: fixed;
+  bottom: 100px;
+  width: 350px;
+  border-bottom: 1px solid #294057;
+  padding: 40px 30px;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.popup-cart-footer-cost p {
+  margin: 5px;
+}
+
+.popup-cart-cart-item-total-cost {
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.popup-cart-footer-button {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 350px;
+  height: 100px;
+  padding: 30px;
+}
+
+.popup-cart-button-to-cart {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.popup-cart-button-to-cart a {
+  background-color: #b99867;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 65px;
+  text-transform: uppercase;
+
+  &:hover, &:active, &:focus {
+  opacity: 0.8;
+  }
+}
+
+.popup-cart-item-total-cost {
+  visibility: hidden;
+}

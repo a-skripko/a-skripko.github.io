@@ -1,0 +1,259 @@
+.product-nav {
+  width: 980px;
+  background-color: white;
+  margin: 250px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-nav a {
+  color: #2F2E2E;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+a.disabled {
+  color: #2F2E2E;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.product-nav-arrow-back {
+  transform: rotate(180deg);
+}
+
+.product-main {
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  background-color: white;
+  margin: auto;
+  padding: 50px 25px 25px;
+}
+
+.product-image-wrapper {
+  position: relative;
+  width: 580px;
+  height: 420px;
+  margin-right: 25px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-description {
+  width: 280px;
+  color: #2F2E2E;
+}
+
+.product-description h3 {
+  font-size: 30px;
+  color: #294057;
+  font-weight: 400;
+}
+
+.product-article {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #605E5E;
+}
+
+.product-description label {
+  color: #2F2E2E;
+  font-size: 13px;
+}
+
+.item-price {
+  padding-top: 23px;
+  color: #A6A6A6;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.product-view {
+  font-size: 15px;
+  color: #2F2E2E;
+  width: 355px;
+  overflow: hidden;
+}
+
+.product-view table {
+  width: 100%;
+}
+
+.product-view td {
+  width: 50%;
+}
+
+.button-show-more {
+  font-size: 15px;
+  color: #2F2E2E;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-show-less {
+  font-size: 15px;
+  color: #2F2E2E;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button-hidden {
+  visibility: hidden;
+}
+
+.product-short-view {
+  height: 72px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.product-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.product-input-group {
+  position: relative;
+  width: 75px;
+  height: 43px;
+  border: 1px solid #c9c9c9;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+#product-input {
+  width: 100px;
+  height: 18px;
+  border: none;
+  color: #575757;
+  //text-align: center;
+}
+.product-input-arrows {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 16px;
+  height: 30px;
+  background-color: white;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  &:hover, &:active, &:focus {
+    opacity: 0.6;
+  }
+}
+
+.product-input-arrow-up {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+  }
+
+}
+
+.product-input-arrow-down {
+  width: 10px;
+  height: 10px;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.6;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    transition: all 0.1s ease-in;
+  }
+}
+
+.product-add-button {
+  width: 100%;
+  text-align: center;
+  background-color: #b99867;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 15px 54px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+    transition: all 0.2s ease-in;
+  }
+  margin-bottom: 50px;
+}
+
+.product-social {
+  height: 110px;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.product-social a {
+  width: 30px;
+  height: 25px;
+  //border: 1px solid #294057;
+}
+
+.product-fb-button {
+  background: url("/img/product-social-icons.png") 0 center no-repeat;
+}
+
+.product-gl-button {
+  background: url("/img/product-social-icons.png") -33px center no-repeat;
+}
+
+.product-tw-button {
+  background: url("/img/product-social-icons.png") -70px center no-repeat;
+}
+
+.product-pt-button {
+  background: url("/img/product-social-icons.png") -107px center no-repeat;
+}
+
+.product-fn-button {
+  background: url("/img/product-social-icons.png") -140px center no-repeat;
+}
+
+.product-footer {
+  width: 980px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+}
+
+.product-footer-left {
+  width: 419px;
+  height: 236px;
+  padding: 10px 30px 10px 0;
+  border-right: 1px solid #E5E5E5;
+}
+
+.product-footer-right {
+  width: 419px;
+  height: 236px;
+  padding: 10px 0 10px 30px;
+}
+
+.product-footer p {
+  font-size: 15px;
+  color: #2F2E2E;
+}
+
+.product-footer h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2F2E2E;
+}
